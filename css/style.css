@@ -1,0 +1,521 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+img, video {
+  max-width: 100%;
+}
+
+body {
+  min-width: 1200px;
+  background-color: rgb(241, 241, 241);
+  font-family: "Muller", sans-serif;
+}
+
+/*FONTS*/
+@font-face {
+  font-family: "Muller";
+  src: local("Muller-Regular"),
+    url("../fonts/MullerRegular.woff2") format("woff2"),
+    url("../fonts/MullerRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local("Muller-Light"),
+    url("../fonts/MullerLight.woff2") format("woff2"),
+    url("../fonts/MullerLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local("Muller-SemiBold"),
+    url("../fonts/MullerBold.woff2") format("woff2"),
+    url("../fonts/MullerBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*TOOLS*/
+.container {
+  width: 1170px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link-reset {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0;
+  color: #007aff;
+  transition: color 0.2s;
+  font-style: normal;
+}
+
+.link-reset:hover {
+  color: rgb(64, 107, 235);
+}
+
+.link-reset:focus {
+  color: rgb(64, 107, 235);
+  border: 1px solid rgb(64, 107, 235);
+}
+
+.link-reset:active {
+  color: #007aff;
+}
+
+.section-title {
+  margin-left: 40px;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.article-title {
+  color: #333;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/*HEADER*/
+.header {
+  padding-top: 30px;
+}
+
+.header-container-up {
+  margin-bottom: 30px;
+  align-items: center;
+  min-height: 54px;
+  justify-content: space-between;
+}
+
+.header-logo {
+  max-height: 54px;
+  border-radius: 15px;
+}
+
+.header-tel {
+  color: #666666;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.header-container-bottom {
+  margin-bottom: 70px;
+  padding: 0 45px;
+  border-radius: 15px;
+  align-items: center;
+  min-height: 70px;
+  background-color: #FFFFFF;
+}
+
+.header-list {
+  min-width: 1080px;
+  justify-content: space-between;
+}
+
+.header-item {
+  color: #666;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/*MAIN*/
+/*SLIDER*/
+.slider {
+  margin-bottom: 70px;
+}
+
+.swiper-slide {
+  width: 100%;
+}
+
+.video-swiper {
+  border-radius: 15px;
+  overflow: hidden;
+  width: 100%;
+  max-height: 484px;
+}
+
+/*ABOUT US*/
+.about-us {
+  margin-bottom: 70px;
+}
+
+.about-us-descr {
+  min-width: 1170px;
+  text-align: justify;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+/* SERVICES */
+.documents {
+  margin-bottom: 70px;
+}
+
+.documents-list {
+  flex-wrap: wrap;
+}
+
+.documents-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 573px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  border-radius: 15px 15px 15px 15px;
+  background: #FFF;
+}
+
+.documents-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.documents-img {
+  min-height: 165px;
+  border-bottom: 1px solid #007aff;
+  border-radius: 15px 15px 0 0;
+}
+
+.documents-item-content {
+  padding: 24px 45px 35px 45px;
+}
+
+.documents-link {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.documents-descr {
+  text-align: justify;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+/* ADVANTAGES */
+.advantages {
+  margin-bottom: 70px;
+}
+
+.advantages-list {
+  flex-wrap: wrap;
+}
+
+.advantages-item {
+  max-width: 276px;
+  margin-right: 22px;
+  margin-bottom: 24px;
+  border-radius: 15px;
+  background: #FFF;
+}
+
+.advantages-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.advantages-item-content {
+  min-width: 276px;
+  padding: 40px 42px 32px 45px;
+}
+
+.advantages-img {
+  margin-bottom: 10px;
+}
+
+.advantages-descr {
+  /* text-align: justify; */
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+/* PLACEMENT */
+.services {
+  margin-bottom: 70px;
+}
+
+.services-list {
+  flex-wrap: wrap;
+}
+
+.services-item {
+  max-width: 374px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  border-radius: 15px;
+  background: #FFF;
+}
+
+.services-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.services-img {
+  border-radius: 15px 15px 0px 0px;
+}
+
+.services-item-content {
+  padding: 32px 45px 45px 45px;
+}
+
+.services-item-bottom {
+  display: inline-block;
+}
+
+.services-preposition {
+  display: inline-block;
+  color: #999;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.services-price {
+  display: inline-block;
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.services-name {
+  margin-bottom: 16px;
+  color: #000;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* GALLERY */
+.gallery {
+  margin-bottom: 70px;
+}
+
+.img-gallery {
+  border-radius: 15px;
+}
+
+/* CONTACTS */
+.contacts {
+  margin-bottom: 40px;
+}
+
+.container-contacts {
+  display: flex;
+  align-items: center;
+  padding: 45px;
+  border-radius: 15px;
+  background: #FFF;
+}
+
+.list-contacts {
+  max-width: 400px;
+  margin-right: 25px;
+}
+
+.item-contacts {
+  display: flex;
+  margin-bottom: 25px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #E9E9E9;
+}
+
+.item-contacts:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.header-item-contacts {
+  min-width: 98px;
+  margin-right: 83px;
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.item-content-contacts {
+  max-width: 229px;
+}
+
+.descript-contacts {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.descript-email {
+  color: #999;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.card-contacts {
+  max-width: 650px;
+  background-color: #E9E9E9;
+  border-radius: 15px;
+}
+
+.slide-contacts {
+  padding: 35px 100px;
+  display: flex;
+}
+
+.img-contacts {
+  max-height: 323px;
+}
+
+.info-img {
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-name {
+  margin-bottom: 16px;
+  color: #000;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* FOOTER */
+.footer-container {
+  min-height: 341px;
+  margin-bottom: 30px;
+  padding: 45px;
+  border-radius: 15px;
+  background: #333333;
+  justify-content: space-between;
+  background-image: url("../media/images/logo/g-logo.svg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: 145% 125%;
+}
+
+.footer-descript {
+  margin-right: 125px;
+  max-width: 302px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.address-content-footer {
+  margin-bottom: 15px;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 190%;
+}
+
+.tel-content-footer {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.email-content-footer {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-left {
+  display: flex;
+}
+
+.content-footer {
+  margin-bottom: 30px;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 190%;
+}
+
+.content-footer:last-child {
+  margin-bottom: 0;
+}
+
+.footer-contacts {
+  max-width: 265px;
+}
